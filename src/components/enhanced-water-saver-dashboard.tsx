@@ -127,7 +127,7 @@ export default function EnhancedWaterSaverDashboard() {
     }
   }, [waterSaved, earnedBadges])
 
-  const handleUsageInput = (day, value) => {
+  const handleUsageInput = (day: string, value: string) => {
     const usage = parseInt(value, 10) || 0
     setWaterUsageData(prevData =>
       prevData.map(item =>
@@ -136,12 +136,12 @@ export default function EnhancedWaterSaverDashboard() {
     )
   }
 
-  const startChallenge = (challenge) => {
+  const startChallenge = (challenge: any) => {
     setActiveChallenge(challenge)
     // In a real app, you'd start tracking the challenge progress here
   }
 
-  const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+  const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }: any) => {
     const RADIAN = Math.PI / 180
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5
     const x = cx + radius * Math.cos(-midAngle * RADIAN)
