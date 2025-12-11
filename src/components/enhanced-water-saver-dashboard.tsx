@@ -73,7 +73,7 @@ export default function EnhancedWaterSaverDashboard() {
   ])
   const [activeChallenge, setActiveChallenge] = useState(null)
   const [selectedProduct, setSelectedProduct] = useState("food")
-  const [earnedBadges, setEarnedBadges] = useState([])
+  const [earnedBadges, setEarnedBadges] = useState<string[]>([])
   const { theme, setTheme } = useTheme()
 
   const totalUsage = useMemo(() => waterUsageData.reduce((sum, day) => sum + day.usage, 0), [waterUsageData])
