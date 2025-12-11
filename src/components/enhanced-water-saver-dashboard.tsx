@@ -95,7 +95,7 @@ export default function EnhancedWaterSaverDashboard() {
   }, [totalUsage])
 
   const virtualWaterFootprint = useMemo(() => {
-    const footprints = {
+    const footprints: Record<string, number> = {
       food: totalUsage * 0.3,
       clothing: totalUsage * 0.2,
       electronics: totalUsage * 0.1,
