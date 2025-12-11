@@ -1,10 +1,11 @@
 import React from 'react'
 
 interface ChartContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   config?: any;
 }
 
-export const ChartContainer = ({ children, config, ...props }: ChartContainerProps) => (
+export const ChartContainer = ({ children, ...props }: ChartContainerProps) => (
   <div {...props}>{children}</div>
 )
 
