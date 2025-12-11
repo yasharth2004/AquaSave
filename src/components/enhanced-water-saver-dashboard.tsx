@@ -5,8 +5,7 @@ import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, PieChart, Pie, Cell, 
 import { Droplet, Users, Home, BarChart2, Award, Lightbulb, ChevronDown, ChevronUp, Zap, TrendingDown, Settings, Target, ShoppingBag, Globe, Sun, Moon } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
-import { Progress } from "@/components/ui/progress"
+import { ChartContainer, ChartTooltipContent } from "@/components/ui/chart"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -142,7 +141,7 @@ export default function EnhancedWaterSaverDashboard() {
     // In a real app, you'd start tracking the challenge progress here
   }
 
-  const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+  const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
     const RADIAN = Math.PI / 180
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5
     const x = cx + radius * Math.cos(-midAngle * RADIAN)
