@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💧 AquaSave - Water Conservation Dashboard
 
-## Getting Started
+A modern, interactive water usage tracking and conservation dashboard built with Next.js 14, featuring real-time analytics, gamification, and sustainability insights.
 
-First, run the development server:
+## ✨ Features
 
+- **📊 Usage Analytics**: Track daily, weekly, and monthly water consumption with interactive charts
+- **🏆 Gamification**: Earn points, unlock badges, and participate in water-saving challenges
+- **📈 Smart Insights**: Get personalized tips and recommendations based on your usage patterns
+- **🌍 Virtual Water Footprint**: Calculate the hidden water cost of products you consume
+- **👥 Community Leaderboard**: Compare your conservation efforts with neighbors
+- **🌓 Dark/Light Mode**: Seamless theme switching for comfortable viewing
+- **📱 Responsive Design**: Optimized for all devices and screen sizes
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI primitives
+- **Charts**: Recharts
+- **Animations**: Framer Motion
+- **Theme**: next-themes
+- **Icons**: Lucide React
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yasharth2004/AquaSave.git
+cd AquaSave
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## 📦 Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Key Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Enhanced Dashboard**: Main water usage dashboard with multiple visualization tabs
+- **Theme Provider**: Dark/light mode support with system preference detection
+- **Chart Components**: Reusable chart containers with consistent styling
+- **UI Components**: Custom-styled buttons, cards, inputs, and more
 
-## Deploy on Vercel
+## 🌟 Features in Detail
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Water Usage Tracking
+- Input daily water consumption
+- View weekly trends and patterns
+- Compare against neighborhood averages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Gamification System
+- Point-based reward system
+- Unlockable achievement badges
+- Water-saving challenges
+
+### Analytics
+- Usage breakdown by category (Bathroom, Kitchen, Laundry, Outdoor)
+- Predictive analytics for future consumption
+- Goal tracking with visual progress indicators
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 👤 Author
+
+**Yasharth Kesarwani**
+- GitHub: [@yasharth2004](https://github.com/yasharth2004)
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- UI components from [Radix UI](https://www.radix-ui.com/)
+- Charts powered by [Recharts](https://recharts.org/)
+- Icons from [Lucide](https://lucide.dev/)
