@@ -136,11 +136,13 @@ export default function EnhancedWaterSaverDashboard() {
     )
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const startChallenge = (challenge: any) => {
     setActiveChallenge(challenge)
     // In a real app, you'd start tracking the challenge progress here
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }: any) => {
     const RADIAN = Math.PI / 180
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5
