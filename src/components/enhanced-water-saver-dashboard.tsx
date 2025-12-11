@@ -260,7 +260,7 @@ export default function EnhancedWaterSaverDashboard() {
                         stroke={theme === 'dark' ? '#E2E8F0' : '#4A5568'}
                         tick={{ fill: theme === 'dark' ? '#E2E8F0' : '#4A5568' }}
                       />
-                      <Tooltip content={<ChartTooltipContent />} />
+                      <Tooltip />
                       <Bar dataKey="usage" fill={theme === 'dark' ? "hsl(var(--cyan-400))" : "var(--color-usage)"}>
                         {waterUsageData.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={theme === 'dark' ? COLORS[index % COLORS.length] : COLORS[index % COLORS.length]} />
@@ -321,7 +321,7 @@ export default function EnhancedWaterSaverDashboard() {
                           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} stroke="white" strokeWidth={2} />
                         ))}
                       </Pie>
-                      <Tooltip content={<ChartTooltipContent />} />
+                      <Tooltip />
                       <Legend verticalAlign="bottom" height={36} />
                     </PieChart>
                   </ResponsiveContainer>
@@ -753,7 +753,7 @@ export default function EnhancedWaterSaverDashboard() {
                       stroke={theme === 'dark' ? '#E2E8F0' : '#4A5568'}
                       tick={{ fill: theme === 'dark' ? '#E2E8F0' : '#4A5568' }}
                     />
-                    <Tooltip content={<ChartTooltipContent />} />
+                    <Tooltip />
                     <Line 
                       type="monotone" 
                       dataKey="usage" 
