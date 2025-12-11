@@ -1,6 +1,10 @@
 import React from 'react'
 
-export const ChartContainer = ({ children, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+interface ChartContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+  config?: any;
+}
+
+export const ChartContainer = ({ children, config, ...props }: ChartContainerProps) => (
   <div {...props}>{children}</div>
 )
 
